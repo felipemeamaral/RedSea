@@ -127,7 +127,7 @@ class MediaDownloader(object):
         _mkdir_p(album_location)
         # Make multi disc directories
         if album_info['numberOfVolumes'] > 1:
-            disc_location = path.join(self.opts['path'], album_location, 'CD{num}'.format(num=track_info['volumeNumber']))
+            disc_location = path.join(album_location, 'CD{num}'.format(num=track_info['volumeNumber']))
             _mkdir_p(disc_location)
 
         # Attempt to get stream URL
