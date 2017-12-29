@@ -2,7 +2,7 @@ If you are a Windows user, you might want to check out [Athame](https://github.c
 
 RedSea
 ======
-Music downloader and tagger for Tidal. For educational use only, and may break in the future.
+Music downloader
 
 Current state
 -------------
