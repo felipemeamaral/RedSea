@@ -101,7 +101,7 @@ class MediaDownloader(object):
         return stream_data
     
     def print_track_info(self, track_info, album_info):
-        line = '\tTrack: {tracknumber}\n\tTitle: {title}\n\tArtist: {artist}\n\tAlbum: {album}'.format(**self.tm.tags(track_info, album_info))
+        line = '\tTrack: {tracknumber}\n\tTitle: {title}\n\tArtist: {artist}\n\tAlbum: {album}\n\tYear: {date}'.format(**self.tm.tags(track_info, album_info))
         try:
             print(line)
         except UnicodeEncodeError:
@@ -153,7 +153,7 @@ class MediaDownloader(object):
 
         temp_file = self._dl_url(stream_data['url'], track_path)
 
-        aa_location = path.join(album_location, 'Cover.jpg')
+        aa_location = path.join(album_location, 'cover.jpg')
         if not path.isfile(aa_location):
             print('\tDownloading album art...')
             if not self._dl_picture(track_info['album']['cover'], aa_location):

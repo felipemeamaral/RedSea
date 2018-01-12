@@ -25,7 +25,7 @@ def get_args():
         help='Skip download if not available in lossless'
     )
     parser.add_argument('-o', 
-        default='rs_config.json',
+        default='config.json',
         metavar='filename', 
         help='The path to a config file. If not supplied, uses `rs_config.json\' in the current directory.')
 

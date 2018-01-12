@@ -8,24 +8,8 @@ from tagger import Tagger
 from tidal_api import TidalApi, TidalError
 from mediadownloader import MediaDownloader
 import cli
-
-logo = """
- /$$$$$$$                  /$$  /$$$$$$                     
-| $$__  $$                | $$ /$$__  $$                    
-| $$  \ $$  /$$$$$$   /$$$$$$$| $$  \__/  /$$$$$$   /$$$$$$ 
-| $$$$$$$/ /$$__  $$ /$$__  $$|  $$$$$$  /$$__  $$ |____  $$
-| $$__  $$| $$$$$$$$| $$  | $$ \____  $$| $$$$$$$$  /$$$$$$$
-| $$  \ $$| $$_____/| $$  | $$ /$$  \ $$| $$_____/ /$$__  $$
-| $$  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$/|  $$$$$$$|  $$$$$$$
-|__/  |__/ \_______/ \_______/ \______/  \_______/ \_______/
-
-                    (c) 2016 Joe Thatcher
-               https://github.com/svbnet/RedSea
-\n"""
     
 def main():
-    print(logo)
-    
     # Get args
     args = cli.get_args()
     
